@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+(<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,35 +11,35 @@
     <div class="content">
         <form>
         <input class="display"
-              type="number">
+              type="text" name="display">
     
     <div class="keys">
-        <input type="button" value="AC">
-        <input type="button" value="DE">
-        <input type="button" value=".">
-        <input type="button" value="/">
+        <input type="button" value="AC" class="operators" onclick="display.value = ' ' ">
+        <input type="button" value="DE" class="operators" onclick="display.value = display.value.toString(0, -1) ">
+        <input type="button" value="." class="operators" onclick="display.value += '.' ">
+        <input type="button" value="/" class="operators" onclick="display.value += '/' ">
         <br>
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
-        <input type="button" value="*">
+        <input type="button" value="7" onclick="display.value += '7' ">
+        <input type="button" value="8" onclick="display.value += '8' ">
+        <input type="button" value="9" onclick="display.value += '9' ">
+        <input type="button" value="*" class="operators" onclick="display.value += '*' ">
         <br>
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
-        <input type="button" value="-">
+        <input type="button" value="4" onclick="display.value += '4' ">
+        <input type="button" value="5" onclick="display.value += '5' ">
+        <input type="button" value="6" onclick="display.value += '6' ">
+        <input type="button" value="-" class="operators" onclick="display.value += '-' ">
         <br>
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" value="+">
+        <input type="button" value="1" onclick="display.value += '1' ">
+        <input type="button" value="2" onclick="display.value += '2' ">
+        <input type="button" value="3" onclick="display.value += '3' ">
+        <input type="button" value="+" class="operators" onclick="display.value = '+' ">
         <br>
-        <input type="button" value="00">
-        <input type="button" value="0">
-        <input type="button" value="=">
+        <input type="button" value="00" onclick="display.value += '00' ">
+        <input type="button" value="0" onclick="display.value += '0' ">
+        <input type="button" value="=" class="equal" onclick="display.value = eval(display.value) ">
     </div>
 </form>
 </div>
-<script></script>
+<script src="script.js"></script>
 </body>
 </html>

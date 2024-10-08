@@ -40,6 +40,14 @@
     cursor: pointer;
 }     
 .keys input:hover{
-    transition: ease-in-out 200ms;
-    background-color: rgb(198, 199, 229);;
-}            
+    transition: ease-in-out 400ms;
+    background-color: rgb(198, 199, 229);
+}        
+form input.operators{
+    background-color: azure;
+    font-weight: bolder;
+}
+form input.equal{
+    width: 100px;
+    font-weight: bolder;
+}
