@@ -3,7 +3,9 @@
     margin: 20px;
     padding: 30px;
     background:#080521;
+    max-width: 100%;
     border-radius: 50px;
+    max-height: 100%;
 }
 .display {
     text-align: center;
@@ -26,7 +28,9 @@
     border-radius: 30px;
     padding: 15px;
     margin: 150px;
-    max-width: 300px;
+    max-width: 280px;
+    margin-top: 50px;
+    max-height: 100%;
 }
 .keys input {
     padding: 16px;
@@ -48,6 +52,6 @@ form input.operators{
     font-weight: bolder;
 }
 form input.equal{
-    width: 100px;
+    width: 110px;
     font-weight: bolder;
 }
